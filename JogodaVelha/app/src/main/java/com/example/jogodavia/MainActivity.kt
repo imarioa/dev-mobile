@@ -57,11 +57,6 @@ class MainActivity : AppCompatActivity() {
     }
     //Função que define o vencedor da partida
     fun win(teste: Array<Button>){
-        //Verifica se a partida deu "velha"
-        if (contador >= 9){
-            Toast.makeText(this, "Deu velha", Toast.LENGTH_SHORT).show()
-            reset(teste)
-        }
         //Aqui contém as 8 formas de vencer a partida
         if((teste[0].text.equals("X") && teste[1].text.equals(teste[0].text) && teste[0].text.equals(teste[2].text)) ||
             (teste[0].text.equals("X") && teste[3].text.equals(teste[0].text) && teste[0].text.equals(teste[6].text)) ||
@@ -87,6 +82,11 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Jogador 2 venceu", Toast.LENGTH_SHORT).show()
             reset(teste)
             return
+        }
+         //Verifica se a partida deu "velha"
+        if (contador >= 9){
+            Toast.makeText(this, "Deu velha", Toast.LENGTH_SHORT).show()
+            reset(teste)
         }
     }
     //Função para resetar o jogo
