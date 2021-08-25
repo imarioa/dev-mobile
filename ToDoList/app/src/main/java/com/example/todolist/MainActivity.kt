@@ -8,7 +8,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.todolist.adapter.Adapter
 import com.example.todolist.data.TodoData
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.itemtodo.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
