@@ -61,9 +61,11 @@ class TodoViewModel(private val todoItem: TodoDAO): ViewModel() {
         )
     }
 
-    fun deleteTodo(todo: Todo) {
-        viewModelScope.launch {
-            todoItem.delete(todo)
+    fun deleteTodo() {
+        for(dt in allItems.value!!){
+            if(dt.checked){
+                todoItem.delete(dt)
+            }
         }
     }
 

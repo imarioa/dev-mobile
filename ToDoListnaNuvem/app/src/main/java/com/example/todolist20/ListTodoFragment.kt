@@ -53,6 +53,7 @@ class ListTodoFragment : Fragment() {
         topAppBar.setOnMenuItemClickListener { item: MenuItem? ->
             when (item!!.itemId) {
                 R.id.delete -> {
+                    viewModel.deleteTodo()
                 }
             }
             true

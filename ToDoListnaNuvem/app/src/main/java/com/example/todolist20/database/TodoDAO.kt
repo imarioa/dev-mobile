@@ -63,9 +63,9 @@ class TodoDAO(private val db: DatabaseReference) {
 
      fun update(item: Todo, map: Map<String, Any> = mapOf()){
         if(map.isEmpty()) {
-            db.child(item.id).setValue(item)
+            db.child("Todo").child(item.id).setValue(item)
         }else{
-            db.child(item.id).updateChildren(map)
+            db.child("Todo").child(item.id).updateChildren(map)
         }
     }
 
