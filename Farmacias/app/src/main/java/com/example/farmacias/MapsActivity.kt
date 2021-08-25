@@ -56,22 +56,22 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         fun Farmacias(): HashMap<String, LatLng>{
             val farmacias: HashMap<String, LatLng> = HashMap<String, LatLng>()
 
-             farmacias.put("PagMenos 1" ,LatLng(-3.835215213927048, -38.52172237925478))
+             farmacias.put("PagMenos 1" ,LatLng(-3.835332495421434, -38.52174215511355))
             farmacias.put("PagMenos 2" ,LatLng(-3.805273339717364, -38.55492812527693))
             farmacias.put("PagMenos 3" ,LatLng(-3.7117307274969806, -38.561967037319114))
-            farmacias.put("PagMenos 4" ,LatLng(-3.7175549522841598, -38.51012530394945))
+            farmacias.put("PagMenos 4" ,LatLng(-3.7213384832646317, -38.509575821949305))
             farmacias.put("PagMenos 5" ,LatLng(-3.743934781961968, -38.5372478002157))
 
 
-            farmacias.put(("Extra Farma 1"), LatLng(-3.7898519872037824, -38.567974655614))
+            farmacias.put(("Extra Farma 1"), LatLng(-3.776172313087159, -38.56190548537651))
             farmacias.put("Extra Farma 2", LatLng(-3.7473720242021114, -38.52952250900869))
-            farmacias.put("Extra Farma 3", LatLng(-3.7494105496027026, -38.48712294679975))
+            farmacias.put("Extra Farma 3", LatLng(-3.7554293173915463, -38.48823520590945))
             farmacias.put("Extra Farma 4", LatLng(-3.7449568955916304, -38.522141866029585))
             farmacias.put("Extra Farma 5", LatLng(-3.7857241101947507, -38.53862135743186))
             farmacias.put("Extra Farma 6", LatLng(-3.7319383925019363, -38.50875227926524))
 
 
-            farmacias.put("Drogasil 1", LatLng(-3.7994382582951074, -38.571751471985245))
+            farmacias.put("Drogasil 1", LatLng(-3.803152621811646, -38.571682965548625))
             farmacias.put("Drogasil 2", LatLng(-3.784365127568704, -38.47527778273442))
             farmacias.put("Drogasil 3", LatLng(-3.815538811573545, -38.497078776568664))
             farmacias.put("Drogasil 4", LatLng(-3.7244405320409704, -38.50668790089046))
