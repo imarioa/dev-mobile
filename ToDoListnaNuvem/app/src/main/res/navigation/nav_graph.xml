@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentLogin">
+
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.todolist20.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+        <action
+            android:id="@+id/action_SecondFragment_to_listTodoFragment"
+            app:destination="@id/listTodoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listTodoFragment"
+        android:name="com.example.todolist20.ListTodoFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_listTodoFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentLogin"
+        android:name="com.example.todolist20.FragmentLogin"
+        android:label="login"
+        tools:layout="@layout/login" >
+        <action
+            android:id="@+id/action_fragmentLogin_to_listTodoFragment"
+            app:destination="@id/listTodoFragment" />
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentCreateUser"
+            app:destination="@id/fragmentCreateUser" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCreateUser"
+        android:name="com.example.todolist20.FragmentCreateUser"
+        android:label="createuser"
+        tools:layout="@layout/createuser" >
+        <action
+            android:id="@+id/action_fragmentCreateUser_to_fragmentLogin"
+            app:destination="@id/fragmentLogin" />
+    </fragment>
+</navigation>
